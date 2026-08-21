@@ -63,7 +63,6 @@ Task2-Personal-Portfolio/
 │
 ├── index.html
 ├── style.css
-├── script.js
 ├── profile.jpg
 └── README.md
 
