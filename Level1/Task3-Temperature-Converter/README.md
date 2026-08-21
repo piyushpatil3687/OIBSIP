@@ -31,20 +31,20 @@ The application allows users to convert temperatures between Celsius, Fahrenheit
 ## Conversion Formulas
 
 ### Celsius to Fahrenheit
-
 °F = (°C × 9/5) + 32
 
 ### Celsius to Kelvin
-
 K = °C + 273.15
 
 ### Fahrenheit to Celsius
-
 °C = (°F − 32) × 5/9
 
 ### Kelvin to Celsius
-
 °C = K − 273.15
+
+🌐 Live Project
+NEXORA Landing Page:
+https://piyushpatil3687.github.io/OIBSIP/Level1/Task3-Temperature-Converter/
 
 ## Project Structure
 
