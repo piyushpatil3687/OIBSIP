@@ -68,7 +68,7 @@ Task2-Personal-Portfolio/
 
 🌐 Live Project
 
-NEXORA Portfolio Page:
+Portfolio Page:
 https://piyushpatil3687.github.io/OIBSIP/Level1/Task2-Personal-Portfolio/
 
 🔗 Developer Links
