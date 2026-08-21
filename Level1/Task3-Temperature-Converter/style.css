@@ -1,0 +1,314 @@
+/* ==============================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    background: #07111f;
+    color: #f8fafc;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ==============================
+   MAIN CONTAINER
+================================= */
+
+.converter-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 60px 25px;
+}
+
+
+/* ==============================
+   HEADER
+================================= */
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.label {
+    color: #38bdf8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    max-width: 600px;
+    margin: auto;
+
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+
+/* ==============================
+   CONVERTER CARD
+================================= */
+
+.converter-card {
+    background: #0d1d30;
+
+    border: 1px solid #1e3a56;
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ==============================
+   FORM
+================================= */
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #cbd5e1;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #334b66;
+    border-radius: 10px;
+
+    background: #07111f;
+    color: #f8fafc;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #38bdf8;
+}
+
+
+/* ==============================
+   BUTTONS
+================================= */
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+button {
+    flex: 1;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #38bdf8;
+    color: #06101c;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.clear-btn {
+    background: #1e3045;
+    color: #e2e8f0;
+}
+
+.clear-btn:hover {
+    background: #293e55;
+}
+
+
+/* ==============================
+   ERROR MESSAGE
+================================= */
+
+.message {
+    margin-top: 20px;
+
+    padding: 12px 15px;
+
+    border-radius: 8px;
+
+    display: none;
+
+    font-size: 14px;
+}
+
+.error-message {
+    background: #3b1820;
+    border: 1px solid #7f1d1d;
+    color: #fecaca;
+}
+
+
+/* ==============================
+   RESULT
+================================= */
+
+.result {
+    margin-top: 25px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: #091827;
+
+    border: 1px solid #1e3a56;
+    border-radius: 15px;
+}
+
+.result-label {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.result h2 {
+    color: #38bdf8;
+    font-size: 36px;
+}
+
+
+/* ==============================
+   INFORMATION SECTION
+================================= */
+
+.info-section {
+    margin-top: 60px;
+}
+
+.info-section > h2 {
+    text-align: center;
+
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.conversion-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.conversion-card {
+    padding: 25px;
+
+    background: #0d1d30;
+
+    border: 1px solid #1e3a56;
+    border-radius: 15px;
+}
+
+.conversion-card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.conversion-card p {
+    color: #94a3b8;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    text-align: center;
+
+    margin-top: 60px;
+    padding-top: 25px;
+
+    border-top: 1px solid #1c3047;
+
+    color: #718096;
+
+    font-size: 13px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 600px) {
+
+    .converter-container {
+        padding: 40px 18px;
+    }
+
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .converter-card {
+        padding: 25px 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .conversion-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .result h2 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter | Piyush Patil</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <main class="converter-container">
+
+        <!-- Header -->
+        <section class="header">
+            <p class="label">OIBSIP • LEVEL 1 • TASK 3</p>
+
+            <h1>Temperature Converter</h1>
+
+            <p class="subtitle">
+                Convert temperatures quickly and accurately
+                between Celsius, Fahrenheit and Kelvin.
+            </p>
+        </section>
+
+
+        <!-- Converter Card -->
+        <section class="converter-card">
+
+            <!-- Temperature Input -->
+            <div class="form-group">
+
+                <label for="temperature">
+                    Enter Temperature
+                </label>
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter a value"
+                    step="any"
+                >
+
+            </div>
+
+
+            <!-- Unit Selection -->
+            <div class="form-group">
+
+                <label for="unit">
+                    Select Unit
+                </label>
+
+                <select id="unit">
+
+                    <option value="celsius">
+                        Celsius (°C)
+                    </option>
+
+                    <option value="fahrenheit">
+                        Fahrenheit (°F)
+                    </option>
+
+                    <option value="kelvin">
+                        Kelvin (K)
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button
+                    type="button"
+                    id="convertBtn">
+                    Convert
+                </button>
+
+                <button
+                    type="button"
+                    id="clearBtn"
+                    class="clear-btn">
+                    Clear
+                </button>
+
+            </div>
+
+
+            <!-- Error Message -->
+            <div
+                id="errorMessage"
+                class="message error-message">
+            </div>
+
+
+            <!-- Result -->
+            <div
+                id="result"
+                class="result">
+                
+                <p class="result-label">
+                    Result
+                </p>
+
+                <h2 id="resultValue">
+                    —
+                </h2>
+
+            </div>
+
+        </section>
+
+
+        <!-- Conversion Information -->
+        <section class="info-section">
+
+            <h2>Supported Conversions</h2>
+
+            <div class="conversion-grid">
+
+                <div class="conversion-card">
+                    <h3>°C → °F</h3>
+
+                    <p>
+                        °F = (°C × 9/5) + 32
+                    </p>
+                </div>
+
+
+                <div class="conversion-card">
+                    <h3>°C → K</h3>
+
+                    <p>
+                        K = °C + 273.15
+                    </p>
+                </div>
+
+
+                <div class="conversion-card">
+                    <h3>°F → °C</h3>
+
+                    <p>
+                        °C = (°F − 32) × 5/9
+                    </p>
+                </div>
+
+
+                <div class="conversion-card">
+                    <h3>K → °C</h3>
+
+                    <p>
+                        °C = K − 273.15
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <p>
+                Developed by Piyush Vijay Patil
+            </p>
+
+            <p>
+                OASIS INFOBYTE Web Development & Design Internship
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
