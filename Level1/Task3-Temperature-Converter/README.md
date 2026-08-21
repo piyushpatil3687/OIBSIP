@@ -43,7 +43,7 @@ K = °C + 273.15
 °C = K − 273.15
 
 🌐 Live Project
-NEXORA Landing Page:
+Temperature-Converter:
 https://piyushpatil3687.github.io/OIBSIP/Level1/Task3-Temperature-Converter/
 
 ## Project Structure
